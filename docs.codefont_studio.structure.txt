@@ -1,0 +1,36 @@
+codefont-studio/
+├── src/
+│   ├── ide/
+│   │   ├── layout/
+│   │   │   ├── mainPanel.ts
+│   │   │   ├── sidebar.ts
+│   │   │   └── statusBar.ts
+│   │   ├── editor/
+│   │   │   ├── multiFileEditor.ts
+│   │   │   ├── intelligentEditor.ts
+│   │   │   └── collaborativeEditor.ts
+│   │   ├── preview/
+│   │   │   ├── livePreview.ts
+│   │   │   ├── deviceSimulator.ts
+│   │   │   └── hotReload.ts
+│   │   ├── chat/
+│   │   │   ├── aiChat.ts
+│   │   │   ├── codingAssistant.ts
+│   │   │   └── voiceInterface.ts
+│   │   └── project/
+│   │       ├── projectManager.ts
+│   │       ├── fileExplorer.ts
+│   │       └── deployment.ts
+│   ├── themes/
+│   │   ├── famousAI.css
+│   │   ├── boltNew.css
+│   │   └── claudeAI.css
+│   └── components/
+│       ├── glassmorphic/
+│       ├── animated/
+│       └── interactive/
+├── assets/
+│   ├── icons/
+│   ├── backgrounds/
+│   └── animations/
+└── package.json

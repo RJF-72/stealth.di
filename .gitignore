@@ -1,0 +1,29 @@
+# Node & monorepo
+node_modules/
+npm-debug.log*
+logs/
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# VS Code extension build
+out/
+.vscode-test/
+
+# Next.js app (apps/web-app)
+apps/web-app/.next/
+apps/web-app/out/
+apps/web-app/.vercel/
+
+# Vite SPA (root web-app)
+web-app/dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db

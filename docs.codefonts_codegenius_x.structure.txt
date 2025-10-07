@@ -1,0 +1,13 @@
+codefonts/codegenius-x/
+├── CODEGENIUS_X.cf
+├── advanced-completion-engine.ts
+├── function-synthesis-engine.ts
+├── test-creation-engine.ts
+├── static-analysis-engine.ts
+├── explanation-generator.ts
+├── architecture-reviewer.ts
+├── dependency-analyzer.ts
+├── refactoring-assistant.ts
+├── performance-optimizer.ts
+├── security-auditor.ts
+└── code-pattern-learner.ts

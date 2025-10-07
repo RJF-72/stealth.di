@@ -1,0 +1,74 @@
+{
+  "name": "codefont-studio",
+  "displayName": "CodeFont Studio - AI-Powered IDE",
+  "description": "Famous.AI-inspired IDE with live preview and autonomous coding",
+  "version": "1.0.0",
+  "publisher": "CodeFonts",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Programming Languages", "AI", "Visualization", "Themes"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/src/extension.js",
+  "browser": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codefont.studio.open",
+        "title": "🚀 Open CodeFont Studio",
+        "icon": "$(rocket)"
+      },
+      {
+        "command": "codefont.preview.toggle",
+        "title": "👁️ Toggle Live Preview"
+      },
+      {
+        "command": "codefont.chat.open",
+        "title": "💬 Open AI Assistant"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "codefont-studio",
+          "title": "CodeFont Studio",
+          "icon": "media/icons/studio.svg"
+        }
+      ]
+    },
+    "views": {
+      "codefont-studio": [
+        {
+          "id": "codefont-project",
+          "name": "Project",
+          "icon": "media/icons/project.svg"
+        },
+        {
+          "id": "codefont-preview",
+          "name": "Live Preview",
+          "icon": "media/icons/preview.svg"
+        },
+        {
+          "id": "codefont-chat",
+          "name": "AI Assistant",
+          "icon": "media/icons/chat.svg"
+        }
+      ]
+    },
+    "themes": [
+      {
+        "label": "Famous.AI Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/famousAI-dark.json"
+      },
+      {
+        "label": "Bolt.New Light",
+        "uiTheme": "vs",
+        "path": "./themes/boltNew-light.json"
+      },
+      {
+        "label": "Claude.AI Professional",
+        "uiTheme": "vs-dark",
+        "path": "./themes/claudeAI-pro.json"
+      }
+    ]
+  }
+}

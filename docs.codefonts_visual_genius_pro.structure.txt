@@ -1,0 +1,16 @@
+codefonts/visual-genius-pro/
+├── VISUAL_GENIUS_PRO.cf
+├── visual-genius-codefont.ts
+├── photorealistic-generator.ts
+├── icon-design-engine.ts
+├── logo-design-studio.ts
+├── favicon-factory.ts
+├── ai-upscaler.ts
+├── format-converter.ts
+├── batch-processor.ts
+├── style-transfer-engine.ts
+├── artistic-style-library.ts
+├── color-theory-engine.ts
+├── composition-analyzer.ts
+├── autonomous-asset-generator.ts
+└── asset-generation-pipeline.ts

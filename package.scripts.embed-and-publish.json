@@ -1,0 +1,13 @@
+// package.json build scripts
+{
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "embed:codefont": "node build-embed.js",
+    "build": "npm run embed:codefont && npm run compile",
+    "package": "npm run build && vsce package",
+    "publish:openvsx": "npm run package && ovsx publish",
+    "publish:vscode": "npm run package && vsce publish"
+  }
+}

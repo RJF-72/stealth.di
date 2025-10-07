@@ -1,0 +1,19 @@
+stealth-di-web/
+├── apps/
+│   ├── web-app/                 # Next.js Frontend
+│   ├── studio/                  # React-based IDE
+│   ├── api/                     # Backend API
+│   └── preview-engine/          # Live Preview Service
+├── packages/
+│   ├── codefont-engine/         # Compressed CodeFont Runtime
+│   ├── di-model/               # Directed Intelligence Core
+│   ├── live-preview/           # Real-time Preview System
+│   └── ui-components/          # Stealth Design System
+├── services/
+│   ├── compilation/            # Code Compilation Service
+│   ├── deployment/             # One-Click Deployment
+│   └── ai-orchestration/       # DI Model Orchestration
+└── infrastructure/
+    ├── docker/
+    ├── kubernetes/
+    └── terraform/

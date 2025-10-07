@@ -1,0 +1,42 @@
+{
+  "name": "codegenius",
+  "displayName": "CodeGenius AI",
+  "description": "SOTA AI-powered code completion and generation",
+  "version": "1.0.0",
+  "publisher": "CodeFonts",
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Programming Languages", "AI", "Machine Learning"],
+  "activationEvents": ["onLanguage:python", "onLanguage:javascript"],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codegenius.generateCode",
+        "title": "CodeGenius: Generate Code from Description"
+      },
+      {
+        "command": "codegenius.explainCode", 
+        "title": "CodeGenius: Explain This Code"
+      },
+      {
+        "command": "codegenius.refactorCode",
+        "title": "CodeGenius: Refactor Selection"
+      }
+    ],
+    "configuration": {
+      "title": "CodeGenius",
+      "properties": {
+        "codegenius.enableCompletion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable AI-powered code completion"
+        },
+        "codegenius.enableGeneration": {
+          "type": "boolean", 
+          "default": true,
+          "description": "Enable code generation from descriptions"
+        }
+      }
+    }
+  }
+}

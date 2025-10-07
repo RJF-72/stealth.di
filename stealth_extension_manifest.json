@@ -1,0 +1,91 @@
+{
+  "name": "stealth-si-autonomous-pro",
+  "displayName": "Stealth.SI Autonomous Pro - Full Workspace Access",
+  "description": "Fully autonomous Synthetic Intelligence with complete workspace access, file system permissions, and multimedia support",
+  "version": "3.0.0",
+  "publisher": "stealth-si",
+  "engines": {"vscode": "^1.85.0"},
+  "categories": ["Machine Learning", "Snippets", "Other", "AI", "Linters"],
+  "keywords": ["ai", "synthetic intelligence", "autonomous", "file system", "workspace", "multimedia"],
+  "activationEvents": [
+    "onCommand:stealthsi.chat",
+    "onCommand:stealthsi.autonomous",
+    "onCommand:stealthsi.createApp",
+    "onCommand:stealthsi.workspaceScan",
+    "onCommand:stealthsi.uploadFiles",
+    "onCommand:stealthsi.fullAccessMode",
+    "workspaceContains:**/*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stealthsi.chat",
+        "title": "Stealth.SI: Open Autonomous Chat with File Access",
+        "category": "Stealth.SI"
+      },
+      {
+        "command": "stealthsi.autonomous",
+        "title": "Stealth.SI: Start Autonomous Mode with Full Permissions",
+        "category": "Stealth.SI"
+      },
+      {
+        "command": "stealthsi.createApp",
+        "title": "Stealth.SI: Create Complete Application with Assets",
+        "category": "Stealth.SI"
+      },
+      {
+        "command": "stealthsi.workspaceScan",
+        "title": "Stealth.SI: Scan Entire Workspace",
+        "category": "Stealth.SI"
+      },
+      {
+        "command": "stealthsi.uploadFiles",
+        "title": "Stealth.SI: Upload Files/Images for Processing",
+        "category": "Stealth.SI"
+      },
+      {
+        "command": "stealthsi.fullAccessMode",
+        "title": "Stealth.SI: Enable Full File System Access",
+        "category": "Stealth.SI"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "stealthsi.uploadFiles",
+          "group": "stealthsi"
+        },
+        {
+          "command": "stealthsi.workspaceScan",
+          "group": "stealthsi"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Stealth.SI Autonomous Pro",
+      "properties": {
+        "stealthSI.fullFileAccess": {
+          "type": "boolean",
+          "default": true,
+          "description": "Grant full file system read/write permissions to Stealth.SI"
+        },
+        "stealthSI.autoWorkspaceScan": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically scan workspace on activation"
+        },
+        "stealthSI.maxFileSizeMB": {
+          "type": "number",
+          "default": 100,
+          "description": "Maximum file size for processing (MB)"
+        },
+        "stealthSI.allowedFileTypes": {
+          "type": "array",
+          "default": ["*"],
+          "description": "File types Stealth.SI can access (* for all)"
+        }
+      }
+    }
+  }
+}

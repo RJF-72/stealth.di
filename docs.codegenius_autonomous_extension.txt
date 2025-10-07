@@ -1,0 +1,15 @@
+codegenius-autonomous-extension/
+├── package.json
+├── src/
+│   ├── extension.ts
+│   ├── embeddedCodeFont.ts
+│   ├── diModel.ts
+│   ├── autonomousCoderUI.ts
+│   ├── embedded/
+│   │   └── codegenius_x.cf.embedded.ts  # ← EMBEDDED CODEFONT
+│   └── providers/
+│       ├── intelligentCompletionProvider.ts
+│       └── autonomousCodeActionProvider.ts
+├── media/
+│   └── icon.png
+└── build-embed.js

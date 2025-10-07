@@ -1,0 +1,11 @@
+// package.json build scripts
+{
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish:openvsx": "ovsx publish",
+    "publish:vscode": "vsce publish"
+  }
+}

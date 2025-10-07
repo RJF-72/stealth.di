@@ -1,0 +1,18 @@
+codegenius-extension/
+├── package.json
+├── src/
+│   ├── extension.ts
+│   ├── providers/
+│   │   ├── completionProvider.ts
+│   │   ├── codeActionsProvider.ts
+│   │   └── hoverProvider.ts
+│   ├── services/
+│   │   ├── codefontLoader.ts
+│   │   ├── diModel.ts
+│   │   └── contextManager.ts
+│   └── webviews/
+│       ├── codeGenPanel.ts
+│       └── settingsPanel.ts
+├── media/
+│   └── icon.png
+└── CODEGENIUS_PRO.cf

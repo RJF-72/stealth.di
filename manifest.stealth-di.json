@@ -1,0 +1,72 @@
+{
+  "name": "stealth-di",
+  "displayName": "Stealth.DI - Directed Intelligence Platform",
+  "description": "Autonomous coding with live preview and SOTA intelligence",
+  "version": "1.0.0",
+  "publisher": "StealthDI",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Programming Languages", "AI", "Visualization", "Productivity"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stealth.di.openStudio",
+        "title": "🕶️ Open Stealth.DI Studio",
+        "icon": "$(eye)"
+      },
+      {
+        "command": "stealth.di.togglePreview",
+        "title": "👁️ Toggle Live Preview"
+      },
+      {
+        "command": "stealth.di.openDirector",
+        "title": "🎯 Open Intelligence Director"
+      },
+      {
+        "command": "stealth.di.stealthMode",
+        "title": "⚡ Activate Stealth Mode"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "stealth-di",
+          "title": "Stealth.DI",
+          "icon": "$(circuit-board)"
+        }
+      ]
+    },
+    "views": {
+      "stealth-di": [
+        {
+          "id": "stealth-director",
+          "name": "Intelligence Director",
+          "icon": "$(graph)"
+        },
+        {
+          "id": "stealth-preview", 
+          "name": "Live Preview",
+          "icon": "$(eye)"
+        },
+        {
+          "id": "stealth-deploy",
+          "name": "Deployment",
+          "icon": "$(rocket)"
+        }
+      ]
+    },
+    "themes": [
+      {
+        "label": "Stealth.DI Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/stealth-di-dark.json"
+      },
+      {
+        "label": "Stealth.DI Matrix",
+        "uiTheme": "vs-dark", 
+        "path": "./themes/stealth-di-matrix.json"
+      }
+    ]
+  }
+}

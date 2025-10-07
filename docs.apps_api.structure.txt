@@ -1,0 +1,13 @@
+apps/api/
+├── src/
+│   ├── app.module.ts
+│   ├── intelligence/
+│   │   └── intelligence.controller.ts
+│   ├── codefont/
+│   │   └── codefont.service.ts
+│   ├── preview/
+│   │   └── preview.service.ts
+│   └── deployment/
+│       └── deployment.service.ts
+├── package.json
+└── Dockerfile

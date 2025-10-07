@@ -1,0 +1,26 @@
+stealth-di-platform/
+├── src/
+│   ├── stealth-studio.ts
+│   ├── stealth-multi-codefont-di-model.ts
+│   ├── codefont-orchestrator.ts
+│   ├── autonomous-pipeline.ts
+│   ├── progress-tracker.ts
+│   ├── execution-planner.ts
+│   ├── resource-manager.ts
+│   ├── cross-domain-task.ts
+│   ├── project-plan.ts
+│   ├── generated-code.ts
+│   ├── project-assets.ts
+│   ├── complete-project.ts
+│   ├── branding/
+│   │   ├── stealth-di.ts
+│   │   └── brand-assets.ts
+│   └── types/
+│       ├── di-types.ts
+│       ├── codefont-types.ts
+│       └── project-types.ts
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+├── next.config.js
+└── vercel.json

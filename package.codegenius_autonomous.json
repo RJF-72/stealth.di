@@ -1,0 +1,54 @@
+// package.json - Updated for embedded CodeFont
+{
+  "name": "codegenius-autonomous",
+  "displayName": "CodeGenius X - Autonomous AI Coder",
+  "description": "Fully autonomous coding assistant with embedded SOTA intelligence",
+  "version": "1.0.0",
+  "publisher": "CodeFonts",
+  "engines": { "vscode": "^1.60.0" },
+  "categories": ["Programming Languages", "AI", "Machine Learning", "Productivity"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codegenius.createProject",
+        "title": "🚀 Create Complete Project from Description"
+      },
+      {
+        "command": "codegenius.inventAlgorithm", 
+        "title": "💡 Invent New Algorithm"
+      },
+      {
+        "command": "codegenius.solveImpossible",
+        "title": "🎯 Solve Impossible Problem"
+      },
+      {
+        "command": "codegenius.autonomousRefactor",
+        "title": "⚡ Autonomous Code Refactoring"
+      }
+    ],
+    "configuration": {
+      "title": "CodeGenius Autonomous",
+      "properties": {
+        "codegenius.autonomousMode": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable fully autonomous coding capabilities"
+        },
+        "codegenius.creativityLevel": {
+          "type": "string",
+          "enum": ["conservative", "balanced", "creative", "breakthrough"],
+          "default": "creative",
+          "description": "Set creativity level for code generation"
+        }
+      }
+    }
+  },
+  "extensionDependencies": [],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  }
+}

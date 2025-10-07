@@ -1,0 +1,29 @@
+apps/web-app/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── studio/
+│   │   └── page.tsx
+│   └── api/
+│       ├── intelligence/
+│       │   └── route.ts
+│       └── preview/
+│           └── route.ts
+├── components/
+│   ├── stealth-hero.tsx
+│   ├── feature-showcase.tsx
+│   ├── live-demo.tsx
+│   ├── pricing.tsx
+│   ├── studio/
+│   │   ├── stealth-studio.tsx
+│   │   ├── intelligence-sidebar.tsx
+│   │   ├── live-preview-pane.tsx
+│   │   ├── code-editor.tsx
+│   │   └── asset-preview.tsx
+│   └── codefont-loader.tsx
+├── providers/
+│   └── stealth-di-provider.tsx
+├── hooks/
+│   └── use-stealth-di.ts
+└── lib/
+    └── utils.ts

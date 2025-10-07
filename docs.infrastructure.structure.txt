@@ -1,0 +1,10 @@
+infrastructure/
+├── kubernetes/
+│   └── stealth-di.yaml
+├── docker/
+│   ├── web-app.Dockerfile
+│   ├── api.Dockerfile
+│   └── preview-engine.Dockerfile
+└── terraform/
+    ├── main.tf
+    └── variables.tf
