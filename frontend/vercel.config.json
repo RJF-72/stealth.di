@@ -1,0 +1,24 @@
+// apps/web-app/vercel.json
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_APP_URL": "https://stealth.di",
+    "NEXT_PUBLIC_WS_URL": "wss://ws.stealth.di"
+  }
+}

@@ -1,0 +1,38 @@
+# infrastructure/kubernetes/stealth-di.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stealth-di-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: stealth-di
+  template:
+    metadata:
+      labels:
+        app: stealth-di
+    spec:
+      containers:
+      - name: web-app
+        image: stealthdi/web-app:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: stealth-secrets
+              key: database-url
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stealth-di-service
+spec:
+  selector:
+    app: stealth-di
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
